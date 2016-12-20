@@ -1,0 +1,15 @@
+<head>
+  <title>Hex Clock with realtime changing colors</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+  <div style="background : rgb({{colorHour}}, {{colorMinute}}, {{colorSecond}})">
+    <p class ="time">#{{hours}}{{minutes}}{{seconds}}</p> <br>
+    <p class ="me">Created by Carl Amko</p>
+  </div>
+</template>
